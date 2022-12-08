@@ -2,8 +2,10 @@
 
 # Create links
 ln -fs ~/dotfiles/.bashrc ~
+ln -fs ~/dotfiles/.zshrc ~
 ln -fs ~/dotfiles/.fonts/ ~
 ln -fs ~/dotfiles/.spicetify/ ~
+ln -fs ~/dotfiles/.oh-my-zsh/ ~
 
 ln -fs ~/dotfiles/.config/i3/ ~/.config/
 ln -fs ~/dotfiles/.config/neofetch/ ~/.config/
