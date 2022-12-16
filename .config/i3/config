@@ -206,3 +206,4 @@ bindsym $mod+r mode "resize"
 exec_always feh --bg-scale ~/.config/i3/BG.png
 exec_always picom -b
 exec ~/.config/polybar/launch.sh --hack
+exec setxkbmap -option grp:switch,grp:alt_shift_toggle,grp_led:scroll us,il
