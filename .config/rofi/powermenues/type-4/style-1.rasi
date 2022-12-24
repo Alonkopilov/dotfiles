@@ -16,17 +16,17 @@ configuration {
 * {
     /* Resolution : 1920x1080 */
     mainbox-spacing:             100px;
-    mainbox-margin:              100px 300px;
-    message-margin:              0px 400px;
-    message-padding:             15px;
+    mainbox-margin:              1% 22%;
+    message-margin:              0px 170px;
+    message-padding:             10px;
     message-border-radius:       100%;
-    listview-spacing:            50px;
-    element-padding:             55px 60px;
+    listview-spacing:            3%;
+    element-padding:             3% 3%;
     element-border-radius:       100%;
 
     prompt-font:                 "JetBrains Mono Nerd Font Bold Italic 64";
     textbox-font:                "JetBrains Mono Nerd Font 16";
-    element-text-font:           "feather 64";
+    element-text-font:           "feather 30";
 
     background-window:           black/5%;
     background-normal:           white/5%;
