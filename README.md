@@ -8,8 +8,6 @@ Have a question? contact me at _alonkop12@gmail.com_
 ## Preview
 ![Cover Image](assets/showcase.png?raw=true)
 
-![Cover Image](assets/showcase3.png?raw=true)
-
 ![Cover Image](assets/showcase2.png?raw=true)
 
 ## Author

@@ -12,7 +12,7 @@ launch_bar() {
 
 	# Launch the bar
 	for m in $(polybar --list-monitors | cut -d":" -f1); do
-		MONITOR=$m polybar --reload -q top -c "$HOME"/.config/polybar/hack/config.ini &
+    	MONITOR=$m polybar --reload -q main -c "$HOME"/.config/polybar/blocks/config.ini &
 	done
 }
 
@@ -56,6 +56,14 @@ elif [[ "$1" == "--forest" ]]; then
 	style="forest"
 	launch_bar
 
+elif [[ "$1" == "--pwidgets" ]]; then
+	style="pwidgets"
+	launch_bar
+
+elif [[ "$1" == "--panels" ]]; then
+	style="panels"
+	launch_bar
+
 else
 	cat <<- EOF
 	Usage : launch.sh --theme
@@ -63,6 +71,6 @@ else
 	Available Themes :
 	--blocks    --colorblocks    --cuts      --docky
 	--forest    --grayblocks     --hack      --material
-	--shades    --shapes
+	--panels    --pwidgets       --shades    --shapes
 	EOF
 fi
