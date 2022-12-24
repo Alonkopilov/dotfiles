@@ -1,6 +1,7 @@
 #!/bin/bash
 
 # Install dependencies
+sudo apt update
 sudo apt install -y i3 rofi polybar picom xrandr arandr
 
 # Create links
