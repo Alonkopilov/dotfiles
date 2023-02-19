@@ -152,6 +152,7 @@ bindsym $mod+9 workspace number $ws9
 bindsym $mod+0 workspace number $ws10
 
 assign [class="zoom"] $ws9
+for_window [class="^Spotify"] move to workspace $ws10
 
 # move focused container to workspace
 bindsym $mod+Shift+1 move container to workspace number $ws1
