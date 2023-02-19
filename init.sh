@@ -2,11 +2,12 @@
 
 # Install dependencies
 sudo apt update
-sudo apt install -y i3 rofi polybar picom arandr
+sudo apt install -y i3 rofi polybar picom arandr trash-cli
 
 # Create links
 ln -fs ~/dotfiles/.bashrc ~
 ln -fs ~/dotfiles/.zshrc ~
+ln -fs ~/dotfiles/.zshenv ~
 ln -fs ~/dotfiles/.fonts/ ~
 ln -fs ~/dotfiles/.spicetify/ ~
 ln -fs ~/dotfiles/.oh-my-zsh/ ~
