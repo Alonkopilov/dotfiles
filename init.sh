@@ -23,3 +23,8 @@ git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-m
 # Enable spotify-listener for polybar
 systemctl --user enable spotify-listener
 systemctl --user start spotify-listener
+
+# Install font for terminal
+TERMINAL_FONT='FiraCode NF 11'
+dconf write "/org/gnome/terminal/legacy/profiles:/$(dconf list '/org/gnome/terminal/legacy/profiles:/')font" "$(TERMINAL_FONT)"
+
