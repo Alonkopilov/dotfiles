@@ -207,3 +207,5 @@ exec_always feh --bg-scale ~/.config/i3/BG.png
 exec_always picom -b --experimental-backends
 exec_always ~/.config/polybar/launch.sh --blocks
 
+exec_always xset -dpms
+exec_always xset s off
