@@ -3,6 +3,10 @@
 # Install dependencies
 sudo apt update
 sudo apt install -y i3 rofi polybar picom arandr trash-cli
+wget https://github.com/gokcehan/lf/releases/download/r28/lf-linux-amd64.tar.gz -P ~/Downloads && \
+	tar -xf ~/Downloads/lf*.tar.gz -C ~/Downloads && \
+	sudo mv ~/Downloads/lf /usr/bin && \
+	rm ~/Downloads/lf*.tar.gz
 
 # Create links
 ln -fs ~/dotfiles/.bashrc ~
@@ -27,5 +31,6 @@ systemctl --user start spotify-listener
 
 # Install font for terminal
 TERMINAL_FONT='FiraCode NF 11'
-dconf write "/org/gnome/terminal/legacy/profiles:/$(dconf list '/org/gnome/terminal/legacy/profiles:/')font" "$(TERMINAL_FONT)"
+dconf write "/org/gnome/terminal/legacy/profiles:/$(dconf list '/org/gnome/terminal/legacy/profiles:/')font" "'$TERMINAL_FONT'"
 
+echo "Installation Complete, reboot your machine."
